@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% if winner==True %}
+
+        Player 1, {{player_list[0].name}}  wins!
+
+    {% elif winner==False %}
+
+        Player 2, {{player_list[1].name}} wins!
+
+    {% elif winner==None %}
+
+        It's a Draw!
+
+    {% endif %}
+
+{% endblock %}

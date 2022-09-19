@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<p>Player 1, enter your name and choice:</p>
+
+<form class="form-inline" action="/rpshome/player_2" method="post">
+    <input type="text" name="name" title="name">
+    <!-- <input type="text" name="choice" title="choice"> -->
+    <select id="choice" name="choice" title="choice>">
+        <option value="rock">Rock</option>
+        <option value="scissors">Scissors</option>
+        <option value="paper">Paper</option>
+    </select>
+    <input type="submit" value="Submit">
+</form>
+
+
+
+{% endblock %}
